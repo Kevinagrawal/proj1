@@ -2,6 +2,7 @@
 
 package Tree;
 
+import Special.Special;
 import Special.Begin;
 import Special.Cond;
 import Special.Define;
@@ -11,7 +12,6 @@ import Special.Let;
 import Special.Quote;
 import Special.Regular;
 import Special.Set;
-import Special.Special;
 
 public class Cons extends Node {
     private Node car;
@@ -59,9 +59,25 @@ public class Cons extends Node {
         }
     }
 
-
     // TODO: Add any helper functions for parseList
     // to the class hierarchy as needed.
+
+    public Node getCar() {
+        return car;
+    }
+
+    public Node getCdr() {
+        return cdr;
+    }
+
+    public void setCar(Node a) {
+        car = a;
+        parseList();
+    }
+
+    public void setCdr(Node d) {
+        cdr = d;
+    }
 
     public void print(int n) {
         form.print(this, n, false);

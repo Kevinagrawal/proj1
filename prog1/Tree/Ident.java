@@ -9,6 +9,10 @@ public class Ident extends Node {
         name = n;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void print(int n) {
         for (int i = 0; i < n; i++)
             System.out.print(" ");

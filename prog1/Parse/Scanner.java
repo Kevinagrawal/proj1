@@ -124,8 +124,11 @@ public class Scanner {
 			}
 
 			// Identifiers
-			else if (ch >= 'A' && ch <= 'Z'
-				/* or ch is some other valid first character for an identifier */) {
+			else if (Character.isLetter(ch) ||
+					ch == '!' || ch == '$' || ch == '%' || ch == '&' ||
+					ch == '*' || ch == '/' || ch == ':' || ch == '<' ||
+					ch == '=' || ch == '>' || ch == '?' || ch == '^' ||
+					ch == '_' || ch == '~' || ch == '+' || ch == '-') {
 				// TODO: scan an identifier into the buffer variable buf
 				int len = 0;
 

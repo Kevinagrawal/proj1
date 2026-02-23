@@ -9,6 +9,10 @@ public class StrLit extends Node {
         strVal = s;
     }
 
+    public String getVal() {
+        return strVal;
+    }
+
     public void print(int n) {
         for (int i = 0; i < n; i++)
             System.out.print(" ");

@@ -9,6 +9,10 @@ public class IntLit extends Node {
         intVal = i;
     }
 
+    public int getVal() {
+        return intVal;
+    }
+
     public void print(int n) {
         for (int i = 0; i < n; i++)
             System.out.print(" ");
