@@ -54,7 +54,7 @@ abstract public class Special {
         }
 
         if (x instanceof Cons) {
-            ((Cons) x).print(0);
+            printListInline((Cons) x, false);
             return;
         }
 
